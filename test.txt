@@ -1,0 +1,24 @@
+
+Test5.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_add:
+       0:	55 	pushq	%rbp
+       1:	48 89 e5 	movq	%rsp, %rbp
+       4:	89 7d fc 	movl	%edi, -4(%rbp)
+       7:	89 75 f8 	movl	%esi, -8(%rbp)
+       a:	8b 75 fc 	movl	-4(%rbp), %esi
+       d:	03 75 f8 	addl	-8(%rbp), %esi
+      10:	89 75 f4 	movl	%esi, -12(%rbp)
+      13:	8b 45 f4 	movl	-12(%rbp), %eax
+      16:	5d 	popq	%rbp
+      17:	c3 	retq
+      18:	0f 1f 84 00 00 00 00 00 	nopl	(%rax,%rax)
+
+_main:
+      20:	55 	pushq	%rbp
+      21:	48 89 e5 	movq	%rsp, %rbp
+      24:	31 c0 	xorl	%eax, %eax
+      26:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+      2d:	5d 	popq	%rbp
+      2e:	c3 	retq

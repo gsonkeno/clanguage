@@ -1,0 +1,43 @@
+
+a.out:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+__text:
+100000f80:	55 	pushq	%rbp
+100000f81:	48 89 e5 	movq	%rsp, %rbp
+100000f84:	89 7d fc 	movl	%edi, -4(%rbp)
+100000f87:	89 75 f8 	movl	%esi, -8(%rbp)
+100000f8a:	8b 75 fc 	movl	-4(%rbp), %esi
+100000f8d:	03 75 f8 	addl	-8(%rbp), %esi
+100000f90:	89 75 f4 	movl	%esi, -12(%rbp)
+100000f93:	8b 45 f4 	movl	-12(%rbp), %eax
+100000f96:	5d 	popq	%rbp
+100000f97:	c3 	retq
+100000f98:	0f 1f 84 00 00 00 00 00 	nopl	(%rax,%rax)
+100000fa0:	55 	pushq	%rbp
+100000fa1:	48 89 e5 	movq	%rsp, %rbp
+100000fa4:	31 c0 	xorl	%eax, %eax
+100000fa6:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000fad:	5d 	popq	%rbp
+100000fae:	c3 	retq
+
+_add:
+100000f80:	55 	pushq	%rbp
+100000f81:	48 89 e5 	movq	%rsp, %rbp
+100000f84:	89 7d fc 	movl	%edi, -4(%rbp)
+100000f87:	89 75 f8 	movl	%esi, -8(%rbp)
+100000f8a:	8b 75 fc 	movl	-4(%rbp), %esi
+100000f8d:	03 75 f8 	addl	-8(%rbp), %esi
+100000f90:	89 75 f4 	movl	%esi, -12(%rbp)
+100000f93:	8b 45 f4 	movl	-12(%rbp), %eax
+100000f96:	5d 	popq	%rbp
+100000f97:	c3 	retq
+100000f98:	0f 1f 84 00 00 00 00 00 	nopl	(%rax,%rax)
+
+_main:
+100000fa0:	55 	pushq	%rbp
+100000fa1:	48 89 e5 	movq	%rsp, %rbp
+100000fa4:	31 c0 	xorl	%eax, %eax
+100000fa6:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000fad:	5d 	popq	%rbp
+100000fae:	c3 	retq
