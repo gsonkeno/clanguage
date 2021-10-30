@@ -2,7 +2,7 @@
 
 -S  -> Only run preprocess and compilation steps
 
--o &#60;file&#62;  -> Write output to <file>
+-o &#60;file&#62;  -> Write output to &#60;file&#62;
 
 
 
