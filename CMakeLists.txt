@@ -3,4 +3,4 @@ project(clanguage C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(clanguage main.c )
+add_executable(clanguage common/main.c)
