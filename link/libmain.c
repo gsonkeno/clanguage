@@ -8,6 +8,10 @@
 
 // gcc -c libmain.c
 // gcc -static -o libmain libmain.o ./mylib.a
+
+// 那么如何自定义一个动态共享库文件呢？
+// gcc -c mypro1.c mypro2.c
+// gcc -shared -fPIC -o mylib.so mypro1.o mypro2.o
 void myfun1();
 
 int main(){
